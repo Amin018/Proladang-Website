@@ -1,0 +1,226 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #5f795c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('../assets/image/Background.png'); /* Your background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;  /* Center vertically */
+    justify-content: flex-start;  /* Align content to the left */
+    padding-left: 100px; /* Add some left padding */
+    color: white;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 750px; /* Limit width so text doesn’t go too far */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    background-color: #5f795c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+#who-we-are{
+    background-image: url('../assets/image/WhoWeAre.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;  /* Center vertically */
+    justify-content: flex-start;  /* Align content to the left */
+    padding-left: 100px; /* Add some left padding */
+    color: white;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.who-we-are-content {
+    max-width: 900px; /* Limit width so text doesn’t go too far */
+}
+
+.who-we-are-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold ;
+}
+
+.who-we-are-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    background-color: #5f795c;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#mission {
+    background-image: url('../assets/image/mission.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;  /* Center vertically */
+    justify-content: flex-start;  /* Align content to the left */
+    padding: 150px;
+    color: white;
+    text-align: left;
+}
+
+.mission-content h2{
+    color: #5f795c;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    color: black;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.mission-content .btn {
+    background-color: #5f795c;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    float: right;
+
+}
+
+.co-founder-section {
+    background-image: url('../assets/image/CoFounderBack.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 5%;
+}
+.section-title {
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.founders-grid {
+    display: grid;
+    /*grid-template-columns: repeat(1, minmax(250px, 1fr));*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid */
+    padding: 20px;
+}
+
+/* Founder Card */
+.founder-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.founder-img {
+    width: 240px;
+    height: 240px;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    margin-bottom: 15px;
+    /*border: 3px solid white;*/
+}
+
+.founder-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.founder-title {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.founder-desc {
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+
+}
+
+footer {
+    background-color: #5f795c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
