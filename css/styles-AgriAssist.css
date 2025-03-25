@@ -1,0 +1,182 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #5f795c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.AgriAssist-section {
+    background-image: url('../assets/image/AgriAssistBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 5%;
+}
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.section-title img{
+    width: 75px;
+    margin-right: 10px;
+}
+
+/* Grid Layout */
+.AgriAssist-grid {
+    display: grid;
+    /*grid-template-columns: repeat(1, minmax(250px, 1fr));*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid */
+    padding: 20px;
+}
+
+.AgriAssist-card {
+    background: rgba(228, 228, 228, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.feature {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #5f795c;
+    margin-bottom: 20px;
+}
+
+.feature-desc {
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #5f795c;
+    margin-bottom: 20px;
+
+}
+
+.feature-img {
+    width: 100%;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    margin-bottom: 15px;
+    /*border: 3px solid white;*/
+}
+
+.feature-img-center {
+    height: 350px;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    margin-bottom: 15px;
+    /*border: 3px solid white;*/
+}
+
+#AgriAssist-detail{
+    background-image: url('../assets/image/AgriAssistDetail.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;  /* Center vertically */
+    justify-content: flex-start;  /* Align content to the left */
+    padding-left: 100px; /* Add some left padding */
+    color: #5f795c;
+    text-align: left;
+}
+
+.detail-content {
+    max-width: 1000px; /* Limit width so text doesn’t go too far */
+}
+
+.detail-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold ;
+}
+
+.detail-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold ;
+}
+
+.detail-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.detail-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.detail-list p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration:underline;
+    margin-bottom: 20px;
+}
+
+.detail-list li{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-content .btn{
+    background-color: #5f795c;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+footer {
+    background-color: #5f795c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
